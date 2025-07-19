@@ -205,11 +205,11 @@
 
         <section class="about-text">
           <p>
-            Hi, I’m Anshul Wadhwa, a Full Stack Developer who loves building user-friendly and efficient applications. I enjoy working on both the frontend and backend, bringing ideas to life with modern tools and technologies.
+            Hi, I’m Anshul Wadhwa, a Full Stack Developer who loves building user-friendly and efficient applications. I enjoy working on both the frontend and backend, bringing ideas to life using modern tools and technologies.
           </p>
 
           <p>
-            I’m always eager to learn, solve problems, and build projects that make a difference. Whether it's improving functionality or enhancing the user experience, I love taking on new challenges and growing as a developer.
+            I'm always eager to learn, solve problems, and develop projects that create meaningful impact. Whether improving functionality or enhancing the user experience, I embrace new challenges and continuously strive to grow as a developer.
           </p>
         </section>
 
@@ -827,6 +827,20 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+  const starCount = 150;
+  for (let i = 0; i < starCount; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    const size = Math.random() * 2 + 1;
+    star.style.width = size + 'px';
+    star.style.height = size + 'px';
+    star.style.top = Math.random() * window.innerHeight + 'px';
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    star.style.animationDuration = (Math.random() * 3 + 1) + 's';
+    document.body.appendChild(star);
+  }
+</script>
 </body>
 
 </html>
